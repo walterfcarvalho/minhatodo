@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+
+<div class="cards-container">
+
+  <div class="cards-list"  *ngFor= "let item of lista$ | async">
+    <div class="card text-dark bg-light mb-3" style="width: 90%">
+      <div class="card-header">{{ item.nome }}</div>
+      <div class="card-body">
+        <p class="card-body-text">sdsdf.</p>
+        <div class="card-body-icons">
+          <i class="card-body-icon fa fa-edit fa-3x"></i>
+          <i class="card-body-icon fa fa-trash fa-3x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

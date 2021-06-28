@@ -1,0 +1,16 @@
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+    Tarefas
+  </a>
+
+  <div *ngIf= "user$ | async as user">
+    <img src="{{user.photoURL}}" alt="imagem do usuario" class="img-thumbnail">
+    <h5>{{user.displayName }}</h5>
+    <a [routerLink]="['']">Logout</a>
+  </div>
+
+
+
+</nav>

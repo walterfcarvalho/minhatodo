@@ -1,0 +1,32 @@
+
+nome: {{nome}}
+
+
+
+
+
+
+<ul class="list-group" >
+  <div *ngFor= "let it of itens | keyvalue; index i">
+
+    <ng-container *ngIf= "it.value" >
+
+      <li class= "list-group-item"> {{ it.key }} : {{it.value }} </li>
+
+    </ng-container>
+
+  </div>
+</ul>
+
+proximo item
+<ul class="list-group" >
+  <div *ngFor= "let it of itens | keyvalue; index as idx">
+
+    <ng-container *ngIf= "!it.value" >
+
+      <li class= "list-group-item"> {{ it.key }} : {{it.value }} idx: </li>
+
+    </ng-container>
+
+  </div>
+</ul>

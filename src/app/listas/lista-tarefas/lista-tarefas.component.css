@@ -1,0 +1,38 @@
+.cards-container{
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.cards-list{
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 5px 5px 2px grey;
+  max-width: 90%;
+  height: 140px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.card-body-icons {
+  display:flex;
+  flex-direction: row-reverse;
+  margin-left: 30px;
+  width: 20%;
+}
+
+.card-body-icon {
+  flex-grow: 1;
+}
+
+.card-body-text {
+  width: 70%;
+}
+
